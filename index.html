@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     
+    
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+      <fieldset>
+      <legend>
+    <form class="needs-validation" novalidate>
+        
+          <div class="form-group row  mb-3">
+            <label class="col-md-2 col-form-label col-form-label-lg" for="firstName">Firstname</label>
+            <input type="text" class="form-control col-md-4" id="firstName" value="Mark" required autofocus>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          
+          <div class="form-group row  mb-3">
+            <label class="col-md-2 col-form-label col-form-label-lg" for="lastName">Last name</label>
+            <input type="text" class="form-control col-md-4" id="lastName" value="Otto" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        
+        
+          <div class="form-group row  mb-3">
+            <label class="col-md-2 col-form-label col-form-label-lg" for="city">City</label>
+            <input type="text" class="form-control col-md-4" id="city" required>
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+          <div class="form-group row  mb-3">
+            <label class="col-md-2 col-form-label col-form-label-lg" for="state">State</label>
+            <select class="custom-select col-md-4" id="state" required>
+              <option  value="">Choose...</option>
+              <option>Abia</option>
+              <option>Adamawa</option>
+              <option>Akwa Ibom</option>
+              <option>Anambra</option>
+              <option>Bauchi</option>
+              <option>Benue</option>
+              <option>Borno</option>
+              <option>Cross River</option>
+              <option>Delta</option>
+              <option>Ebonyi</option>
+              <option>Edo</option>
+              <option>Enugu</option>
+              <option>Imo</option>
+              <option>Jigawa</option>
+              <option>Kaduna</option>
+              <option>Kebbi</option>
+              <option>Kogi</option>
+              <option>Kwara</option>
+              <option>Lagos</option>
+              <option>Niger</option>
+              <option>Ogun</option>
+              <option>Ondo</option>
+              <option>Osun</option>
+              <option>Oyo</option>
+              <option>Plateau</option>
+              <option>Rivers</option>
+              <option>Taraba</option>
+              <option>Yobe</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </div>
+          
+        
+          <div class="form-group row  mb-3">
+            <label class="col-md-2 col-form-label col-form-label-lg" for="zip">Zip</label>
+            <input type="text" class="form-control col-md-4" id="zip" required>
+            <div class="invalid-feedback">
+              Please provide a valid zip.
+            </div>
+          </div>
+        
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </form>
+    </legend>      
+    </fieldset>
+     
+
+
+
+
+
+
+      
+      <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
+    
+   
+     <!-----geosolutions - select country and city------->
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+     <script src="//geodata.solutions/includes/countrystatecity.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
